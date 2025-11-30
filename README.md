@@ -11,13 +11,13 @@ API criada para gerenciar pedidos, incluindo criação, consulta, listagem, atua
 
 Configuração do Ambiente
 
-Crie um arquivo .env na raiz:
+## Crie um arquivo .env na raiz:
 
-PORT=3000
-MYSQL_HOST=localhost
-MYSQL_USER=root
-MYSQL_PASSWORD=
-MYSQL_DATABASE=ordersdb
+- PORT=3000
+- MYSQL_HOST=localhost
+- MYSQL_USER=root
+- MYSQL_PASSWORD=
+- MYSQL_DATABASE=ordersdb
 
 Banco de Dados
 
