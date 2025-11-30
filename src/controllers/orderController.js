@@ -3,6 +3,7 @@ const Item = require("../models/Item");
 
 module.exports = {
 
+     // Cria um novo pedido no banco
     async create(req, res) {
         try {
             const payload = req.body;
@@ -28,6 +29,7 @@ module.exports = {
         }
     },
 
+    // Busca um pedido específico pelo ID
     async get(req, res) {
         try {
             const order = await Order.findById(req.params.id);
@@ -41,6 +43,7 @@ module.exports = {
         }
     },
 
+    // Lista todos os pedidos cadastrados
     async list(req, res) {
         try {
             const orders = await Order.findAll();
@@ -50,6 +53,7 @@ module.exports = {
         }
     },
 
+    // Atualiza os dados de um pedido existente
     async update(req, res) {
         try {
             await Order.update(req.params.id, req.body);
@@ -59,6 +63,7 @@ module.exports = {
         }
     },
 
+    // Remove um pedido do banco
     async remove(req, res) {
         try {
             await Order.delete(req.params.id);
